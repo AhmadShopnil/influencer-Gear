@@ -110,6 +110,15 @@ button {
     border: none;
     padding: 10px 30px;
     margin-top: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button:hover {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
 }
 
 /* style section-3 */
@@ -152,8 +161,6 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-
-
 }
 
 .blog-item {
@@ -175,4 +182,28 @@ button {
 
 .blog-item h5 {
     margin: 3px 0px;
+}
+
+/* For Mobile  */
+@media screen and (max-width:688px) {
+    .sec-2 {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .half-sec {
+        width: 90%;
+        background-color: aquamarine;
+        margin: 5px 0px;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .half-sec img {
+        width: 80%;
+        margin: 0;
+    }
 }
