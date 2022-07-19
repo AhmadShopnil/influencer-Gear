@@ -184,9 +184,9 @@ button:hover {
 .blog-item {
     cursor: pointer;
     padding: 10px;
-    box-shadow: 5px 5px 5px 10px whitesmoke;
+    box-shadow: 3px 3px 5px 10px whitesmoke;
     border-radius: 8px;
-    border: 1px solid red;
+
 }
 
 .blog-item:hover {
@@ -214,7 +214,6 @@ button:hover {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-
     }
 
     .half-sec {
@@ -234,18 +233,94 @@ button:hover {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
+        margin-left: 100px;
+    }
+
+    .sec-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .blogs {
-        width: 100%;
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
         row-gap: 10px;
+
     }
 
     .blog-item {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .blog-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .menu-icon {
+        text-align: center;
+        height: 30px;
+    }
+}
+
+/* for tab  */
+@media screen and (min-width:650px) and (max-width:1200px) {
+    header {
+        display: none;
+    }
+
+    .sec-2 {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .half-sec {
         width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 5px 0px;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .half-sec img {
+        width: 70%;
+        margin: 0;
+    }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin-left: 100px;
+    }
+
+    .sec-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blogs {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+
+    }
+
+    .blog-item {
+        width: 90%;
+
+
     }
 
     .blog-item img {
